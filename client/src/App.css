@@ -1,0 +1,69 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f9f9f9;
+  --docs-text: #888;
+  --logo-shadow: #646cffaa;
+  --logo-react-shadow: #61dafbaa;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e293b;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --docs-text: #aaa;
+  --logo-shadow: #8ab4f8aa;
+  --logo-react-shadow: #61dafbaa; /* You can adjust this if needed */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--logo-shadow));
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em var(--logo-react-shadow));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.read-the-docs {
+  color: var(--docs-text);
+}
