@@ -49,7 +49,7 @@ const Login = () => {
     e.preventDefault();
     console.log("Submit button clicked with Username:", input);
   
-    const response = await fetch("https://spicmacayback.vercel.app/valid/check", {
+    const response = await fetch("https://spicmacay-nit-durgapur.onrender.com/valid/check", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -72,7 +72,7 @@ const Login = () => {
     e.preventDefault();
     console.log("Submit button clicked with OTP:", otp);
 
-    const response = await fetch("https://spicmacayback.vercel.app/valid/verify-otp", {
+    const response = await fetch("https://spicmacay-nit-durgapur.onrender.com/valid/verify-otp", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

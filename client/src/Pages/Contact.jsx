@@ -21,7 +21,7 @@ const ContactUsWithMap = () => {
     }
     e.preventDefault();
     try {
-      const response = await fetch('https://spicmacayback.vercel.app/valid/contact', {
+      const response = await fetch('https://spicmacay-nit-durgapur.onrender.com/valid/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
