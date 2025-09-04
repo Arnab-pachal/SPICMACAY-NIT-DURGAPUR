@@ -15,7 +15,7 @@ const PhotoGallery = ({ isLoggedIn = true }) => {
     const fetchPhotos = async () => {
       try {
         setLoading(true);
-        const response = await fetch("http://localhost:8080/gallery/photoget");
+        const response = await fetch("https://spicmacay-nit-durgapur.onrender.com/gallery/photoget");
         // adjust backend URL
         const data = await response.json();
         console.log(data)
