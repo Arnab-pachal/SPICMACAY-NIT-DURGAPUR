@@ -18,7 +18,7 @@ const VideoGallery = ({ isLoggedIn = true }) => {
 
 
         setLoading(true);
-        const response = await fetch("http://localhost:8080/gallery/videoget");
+        const response = await fetch("https://spicmacay-nit-durgapur.onrender.com/gallery/videoget");
 
         // Sample videos for demo - replace with your API endpoint
         const sampleVideos = [

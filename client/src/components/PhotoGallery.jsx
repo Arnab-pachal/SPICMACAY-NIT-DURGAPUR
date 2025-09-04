@@ -70,7 +70,7 @@ const PhotoGallery = ({ isLoggedIn = true }) => {
 
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:8080/gallery/upload", {
+      const res = await fetch("https://spicmacay-nit-durgapur.onrender.com/gallery/upload", {
         method: "POST",
         body: formData,
       });
